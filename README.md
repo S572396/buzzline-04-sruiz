@@ -1,5 +1,25 @@
 # buzzline-04-sruiz
 
+## Project 4
+### The new consumer will extract messages and word counts for each author and calculate the sentiment analyis.
+### The sentiment analysis will focus on scores that will indicate a positive or negative sentiment.
+### I will use a Bar Chart to show the message counts per author and a second Bar chart to show the sentiment analysis
+#### Dependencies in env:
+   """" 
+pip install loguru
+pip install kafka-python
+pip install python-dotenv
+pip install textblob 
+   """"
+   
+#### Commands: 
+   """"
+   .venv\Scripts\activate
+   py -m producers.project_producer_case
+   py -m consumers.project_consumer_sruiz
+
+   """"
+
 We can analyze and visualize different types of streaming data as the information arrives.
 
 The producers don't change from buzzline-03-case - they write the same information to a Kafka topic, except the csv producer for the smart smoker has been modified to not run continuously. It will stop after reading all the rows in the CSV file. 
