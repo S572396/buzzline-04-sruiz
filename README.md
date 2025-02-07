@@ -87,6 +87,7 @@ Windows:
 .venv\Scripts\activate
 py -m consumers.basic_json_consumer_case
 ```
+## Add in project_consumer_sruiz.py
 
 Mac/Linux:
 ```zsh
